@@ -25,47 +25,41 @@ header, main, footer {
 
 footer {
     background-color: transparent;
-    color: #fff; /* Adjust text color to white for readability */
+    color: #fff; /* Keeps the text color white for visibility */
     font-size: 0.9em;
-    text-align: left;
+    text-align: center; /* Centers all text inside the footer */
+    padding: 20px;
+    margin: 10px auto; /* Centers the footer and maintains spacing */
+    width: 80%; /* Adjusts the width of the footer to ensure it does not stretch too wide */
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4 {
-    color: #fff; /* Adjust headings to white */
+    color: #fff; /* Ensures headers are white */
+    text-align: center; /* Centers all headings */
 }
 
 p {
     margin: 10px 0;
-}
-
-/* Improve visibility and readability */
-footer h2, footer h3, footer h4 {
-    margin-top: 20px;
-}
-
-footer p {
-    margin-bottom: 10px;
+    text-align: center; /* Centers paragraph text */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    header, main, footer {
-        padding: 15px;
-        margin: 5px;
-    }
-
-    .announcement h1 {
-        font-size: 20px; /* Adjusts font size for smaller screens */
-    }
-
     footer {
         font-size: 0.8em;
-        text-align: center;
     }
+}
 
-    p {
-        margin: 10px 5px;
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
     }
+    footer {
+        font-size: 0.75em; /* Slightly smaller text for very small devices */
+    }
+}
+
 }
 
 @media (max-width: 480px) {
