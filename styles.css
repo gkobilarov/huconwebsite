@@ -29,19 +29,18 @@ footer {
     font-size: 0.9em;
     text-align: center; /* Centers all text inside the footer */
     padding: 20px;
-    margin: 10px auto; /* Centers the footer and maintains spacing */
+    margin: 10px auto; /* Ensures the footer is centered horizontally */
     width: 80%; /* Adjusts the width of the footer to ensure it does not stretch too wide */
     box-sizing: border-box;
-}
-
-h1, h2, h3, h4 {
-    color: #fff; /* Ensures headers are white */
-    text-align: center; /* Centers all headings */
+    display: flex; /* Using flexbox to center content */
+    flex-direction: column; /* Stacks content vertically */
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
 }
 
 p {
     margin: 10px 0;
-    text-align: center; /* Centers paragraph text */
+    width: 100%; /* Ensures paragraphs occupy full width inside the footer */
 }
 
 /* Responsive adjustments */
