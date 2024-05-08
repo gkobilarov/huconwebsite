@@ -3,14 +3,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    background: #000; /* Sets body background to black */
+    color: #fff; /* Sets text color to white for contrast */
 }
 
 header, main, footer {
     padding: 20px;
     margin: 10px;
-    background: white;
+    background: transparent; /* Ensures background is transparent */
     box-sizing: border-box; /* Ensures padding does not add to width */
 }
 
@@ -19,19 +19,19 @@ header, main, footer {
     font-size: 24px;
     font-weight: bold;
     padding: 50px 20px; /* Adds padding for aesthetic spacing */
-    background-color: #000;
-    color: #fff;
+    background-color: transparent; /* Removes any background color */
+    color: #fff; /* White text for visibility */
 }
 
 footer {
     background-color: transparent;
-    color: #333;
+    color: #fff; /* Adjust text color to white for readability */
     font-size: 0.9em;
     text-align: left;
 }
 
 h1, h2, h3, h4 {
-    color: #333;
+    color: #fff; /* Adjust headings to white */
 }
 
 p {
