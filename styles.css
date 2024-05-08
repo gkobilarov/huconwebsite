@@ -57,6 +57,10 @@ footer p {
     p {
         margin: 10px 5px;
     }
+
+    .video-container {
+        min-height: 75vh; /* Larger portion of the screen vertically */
+    }
 }
 
 @media (max-width: 480px) {
@@ -71,6 +75,10 @@ footer p {
 
     h1 {
         font-size: 20px; /* Even smaller font size for very small devices */
+    }
+
+    .video-container {
+        min-height: 50vh; /* Adjust for very small screens */
     }
 }
 
@@ -93,4 +101,5 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover; /* Ensures video covers the area well */
 }
