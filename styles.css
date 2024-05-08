@@ -1,0 +1,22 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.imprint {
+    position: fixed;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
