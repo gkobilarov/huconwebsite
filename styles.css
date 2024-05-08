@@ -1,22 +1,38 @@
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-#background-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-}
-
-.imprint {
-    position: fixed;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    width: 100%;
-    text-align: center;
-    padding: 20px;
+body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header, main, footer {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+}
+
+footer {
+    background-color: #ddd;
+    color: #333;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Improve visibility and readability */
+footer h2, footer h3, footer h4 {
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
 }
