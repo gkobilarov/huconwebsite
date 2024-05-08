@@ -14,6 +14,15 @@ header, main, footer {
     box-sizing: border-box; /* Ensures padding does not add to width */
 }
 
+.announcement h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 50px 20px; /* Adds padding for aesthetic spacing */
+    background-color: #000;
+    color: #fff;
+}
+
 footer {
     background-color: transparent;
     color: #333;
@@ -45,8 +54,8 @@ footer p {
         margin: 5px;
     }
 
-    h1 {
-        font-size: 24px; /* Smaller font size on smaller screens */
+    .announcement h1 {
+        font-size: 20px; /* Adjusts font size for smaller screens */
     }
 
     footer {
@@ -56,10 +65,6 @@ footer p {
 
     p {
         margin: 10px 5px;
-    }
-
-    .video-container {
-        min-height: 75vh; /* Larger portion of the screen vertically */
     }
 }
 
@@ -73,12 +78,8 @@ footer p {
         margin: 5px;
     }
 
-    h1 {
-        font-size: 20px; /* Even smaller font size for very small devices */
-    }
-
-    .video-container {
-        min-height: 50vh; /* Adjust for very small screens */
+    .announcement h1 {
+        font-size: 18px; /* Even smaller font size for very small devices */
     }
 }
 
@@ -86,20 +87,4 @@ footer p {
 img {
     max-width: 100%;
     height: auto;
-}
-
-/* Responsive video container */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* Aspect ratio */
-    height: 0;
-}
-
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures video covers the area well */
 }
