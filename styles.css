@@ -1,80 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
-    background: #000; /* Sets body background to black */
-    color: #fff; /* Sets text color to white for contrast */
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-header, main, footer {
+header {
+    background-color: #120C2B; /* Example primary color */
+    color: white;
     padding: 20px;
-    margin: 10px;
-    background: transparent; /* Ensures background is transparent */
-    box-sizing: border-box; /* Ensures padding does not add to width */
+    text-align: center;
 }
 
-.announcement h1 {
-    text-align: center;
-    font-size: 24px;
+h1, h2 {
     font-weight: bold;
-    padding: 50px 20px; /* Adds padding for aesthetic spacing */
-    background-color: transparent; /* Removes any background color */
-    color: #fff; /* White text for visibility */
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
 }
 
 footer {
-    background-color: transparent;
-    color: #fff;
-    font-size: 0.9em;
-    text-align: center; /* Centers all text inside the footer */
-    padding: 20px;
-    margin: 10px auto; /* Centers the footer horizontally */
-    width: 80%; /* Limits the width of the footer */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers content horizontally */
-    justify-content: center; /* Centers content vertically */
-}
-
-p {
-    margin: 10px 0;
-    width: 100%; /* Ensures paragraphs occupy full width inside the footer */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    footer {
-        font-size: 0.8em;
-    }
-
-    header, main, footer {
-        padding: 15px;
-        margin: 5px;
-    }
-
-    .announcement h1 {
-        font-size: 20px; /* Smaller font size for medium devices */
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 14px; /* Smaller font size on very small devices */
-    }
-
-    footer {
-        font-size: 0.75em; /* Slightly smaller text for very small devices */
-    }
-
-    .announcement h1 {
-        font-size: 18px; /* Even smaller font size for very small devices */
-    }
-}
-
-/* Responsive Images */
-img {
-    max-width: 100%;
-    height: auto;
+    background-color: #574AFF; /* Example secondary color */
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
