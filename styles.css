@@ -3,47 +3,47 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #000; /* Sets body background to black */
-    color: #fff; /* Sets text color to white for contrast */
+    background-color: #000; /* Body background is completely black */
+    color: #fff; /* Text color is white for contrast */
 }
 
 header, main, footer {
     padding: 20px;
     margin: 10px;
-    background: #000; /* Ensures background is transparent */
-    box-sizing: border-box; /* Ensures padding does not add to width */
+    background-color: #000; /* Ensures these sections have a black background */
+    color: #fff; /* Text remains white */
+    box-sizing: border-box; /* Keeps the padding inside the element's width */
 }
 
 .announcement h1 {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    padding: 50px 20px; /* Adds padding for aesthetic spacing */
-    background-color: #000; /* Removes any background color */
+    padding: 50px 20px;
+    background-color: #000; /* Black background for the announcement */
     color: #fff; /* White text for visibility */
 }
 
 footer {
-    background-color: #000;
+    background-color: #000; /* Ensure the footer is black */
     color: #fff;
     font-size: 0.9em;
-    text-align: center; /* Centers all text inside the footer */
+    text-align: center;
     padding: 20px;
-    margin: 10px auto; /* Centers the footer horizontally */
-    width: 80%; /* Limits the width of the footer */
+    margin: 10px auto;
+    width: 80%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers content horizontally */
-    justify-content: center; /* Centers content vertically */
+    align-items: center;
+    justify-content: center;
 }
 
 p {
     margin: 10px 0;
-    width: 100%; /* Ensures paragraphs occupy full width inside the footer */
+    width: 100%;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     footer {
         font-size: 0.8em;
@@ -55,25 +55,30 @@ p {
     }
 
     .announcement h1 {
-        font-size: 20px; /* Smaller font size for medium devices */
+        font-size: 20px;
     }
 }
 
 @media (max-width: 480px) {
     body {
-        font-size: 14px; /* Smaller font size on very small devices */
+        font-size: 14px;
     }
 
     footer {
-        font-size: 0.75em; /* Slightly smaller text for very small devices */
+        font-size: 0.75em;
     }
 
     .announcement h1 {
-        font-size: 18px; /* Even smaller font size for very small devices */
+        font-size: 18px;
     }
 }
 
-/* Responsive Images */
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* Optional: Ensuring the body spans the entire viewport */
+html, body {
+    min-height: 100%;
+}
