@@ -3,17 +3,17 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #000; /* Ensuring full black background */
 }
 
 /* Body should take full height and act as a flex container */
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensures footer is at the bottom */
+    justify-content: space-between; /* Ensures footer stays at the bottom */
     min-height: 100vh;
-    background-color: #000; /* Set the background color */
-    color: #fff; /* Text color is white for contrast */
+    background-color: #000;
+    color: #fff;
 }
 
 /* Main content should take up all remaining space between header and footer */
@@ -22,25 +22,65 @@ main {
     background-color: #000; /* Ensures the background remains black */
 }
 
+/* Remove default margin/padding from header and footer */
+header, footer {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Ensure both have a black background */
+    color: #fff; /* Ensure text is white */
+    border: none; /* Remove any potential borders */
+}
+
 /* Announcement styling */
 .announcement h1 {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     padding: 50px 20px;
+    margin: 0; /* Remove any margin */
     background-color: #000;
     color: #fff;
 }
 
-/* Footer should take full width and stay at the bottom */
+/* Footer styling */
 footer {
-    background-color: #000;
-    color: #fff;
-    font-size: 0.9em;
+    padding: 20px 0; /* Ensure footer has padding but no margin */
     text-align: center;
-    padding: 20px;
     width: 100%; /* Footer takes the full width */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items:
+    align-items: center;
+    justify-content: center;
+    border: none; /* Ensuring no borders */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.8em;
+    }
+
+    .announcement h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 0.75em;
+    }
+
+    .announcement h1 {
+        font-size: 18px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
