@@ -10,7 +10,7 @@ body {
 header, main, footer {
     padding: 20px;
     margin: 10px;
-    background: transparent; /* Ensures background is transparent */
+    background: #000; /* Ensures background is transparent */
     box-sizing: border-box; /* Ensures padding does not add to width */
 }
 
@@ -19,12 +19,12 @@ header, main, footer {
     font-size: 24px;
     font-weight: bold;
     padding: 50px 20px; /* Adds padding for aesthetic spacing */
-    background-color: transparent; /* Removes any background color */
+    background-color: #000; /* Removes any background color */
     color: #fff; /* White text for visibility */
 }
 
 footer {
-    background-color: transparent;
+    background-color: #000;
     color: #fff;
     font-size: 0.9em;
     text-align: center; /* Centers all text inside the footer */
