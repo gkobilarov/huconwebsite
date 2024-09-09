@@ -19,10 +19,7 @@ body {
 /* Main content should take up all remaining space between header and footer */
 main {
     flex-grow: 1; /* This will make the main section expand to fill available space */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
+    background-color: #000; /* Ensures the background remains black */
 }
 
 /* Announcement styling */
@@ -46,40 +43,4 @@ footer {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    footer {
-        font-size: 0.8em;
-    }
-
-    header, main, footer {
-        padding: 15px;
-    }
-
-    .announcement h1 {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-
-    footer {
-        font-size: 0.75em;
-    }
-
-    .announcement h1 {
-        font-size: 18px;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
+    align-items:
