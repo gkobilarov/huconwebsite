@@ -1,91 +1,50 @@
-/* Reset for html and body */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #110C2A; /* Ensuring full #110C2A background */
-}
-
-/* Body should take full height and act as a flex container */
+/* Ensures the entire background of the page is the dark color */
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensures footer stays at the bottom */
-    min-height: 100vh;
-    background-color: #110C2A; /* Updated background color */
-    color: #fff;
-}
-
-/* Main content should take up all remaining space between header and footer */
-main {
-    flex-grow: 1; /* This will make the main section expand to fill available space */
-    display: flex;
-    align-items: center; /* Vertically center content */
-    justify-content: center; /* Horizontally center content */
     background-color: #110C2A;
-    padding-bottom: 20px; /* Add some space before the footer */
-}
-
-/* Remove default margin/padding from header and footer */
-header, footer {
+    color: white;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #110C2A; /* Ensure both have a #110C2A background */
-    color: #fff; /* Ensure text is white */
-    border: none; /* Remove any potential borders */
 }
 
-/* Footer styling */
+/* Styles the description text above the video */
+.description {
+    font-size: 1.1rem;  /* Slightly smaller font size */
+    text-align: center; /* Centers the text */
+    margin-bottom: 20px; /* Adds space below the description */
+    color: white; /* Ensures the text is white for visibility */
+}
+
+/* Main container for video and content */
+main {
+    background-color: #110C2A; /* Keeps the background color consistent in the main content */
+    min-height: 100vh;  /* Ensures the main section takes up the full height of the viewport */
+}
+
+/* Styling for the footer section */
 footer {
-    padding: 40px 0; /* Ensure footer has padding but no margin */
-    text-align: center;
-    width: 100%; /* Footer takes the full width */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none; /* Ensuring no borders */
+    background-color: #110C2A; /* Keeps the background color consistent in the footer */
+    color: white; /* Ensures the text is white */
+    text-align: center; /* Centers the text */
+    padding: 20px; /* Adds padding around the footer */
+    margin-top: 20px; /* Adds space between the footer and the main content */
 }
 
-/* Ensure video container is vertically centered */
-.video-container {
-    max-width: 100%;
-    width: 360px; /* Adjust this value to control video size on desktop */
-    padding-bottom: 20px; /* Ensure some space between video and footer */
+/* Ensures the video background matches the page's background color */
+video {
+    background-color: #110C2A; /* Ensures no white background around the video */
+    width: 100%; /* Makes the video responsive to the container */
+    display: block; /* Removes any default inline spacing */
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    footer {
-        font-size: 0.8em;
-    }
-
-    .announcement h1 {
-        font-size: 20px;
-    }
-
-    .video-container {
-        width: 100%;
-    }
+/* Ensures the container holding the video also has the correct background color */
+.col-md-8 {
+    background-color: #110C2A; /* Ensures no white background in the column */
+    padding: 0; /* Removes any default padding */
 }
 
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-
-    footer {
-        font-size: 0.75em;
-    }
-
-    .announcement h1 {
-        font-size: 18px;
-    }
+/* Ensure full width container styling on small devices */
+.container {
+    padding-left: 0;
+    padding-right: 0;
 }
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
