@@ -20,6 +20,7 @@ main {
     max-width: 500px;
     width: 100%;
     text-align: center;
+    margin: 0 auto; /* Add this line to center the content */
 }
 
 /* Description text styling */
@@ -27,6 +28,7 @@ main {
     font-size: 1.1rem;
     margin-bottom: 20px;
     padding-top: 20px;
+    color: white; /* Ensure text is white */
 }
 
 /* Video styling */
@@ -34,6 +36,15 @@ video {
     width: 100%;
     max-width: 500px;
     background-color: #110C2A;
+}
+
+/* Footer styling */
+footer {
+    background-color: #110C2A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
 }
 
 /* Mobile-specific adjustments */
