@@ -35,3 +35,14 @@ video {
     max-width: 500px;
     background-color: #110C2A;
 }
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .description {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
