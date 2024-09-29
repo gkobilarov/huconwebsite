@@ -10,13 +10,20 @@
 </head>
 <body>
 
-    <!-- Video container for responsive video styling -->
-    <header class="announcement">
-        <h1>For competitive reasons, the official website will be displayed at launch.</h1>
-    </header>
+    <!-- The header with the phrase is removed -->
 
-    <!-- Add the missing main section here to act as the flexible space filler -->
-    <main></main>
+    <!-- Main section where the video is added -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <!-- Video element -->
+                <video controls class="w-100">
+                    <source src="your-video-file.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </main>
     
     <footer>
         <h2>Impressum</h2>
