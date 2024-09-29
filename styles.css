@@ -1,78 +1,37 @@
-/* Ensures the entire background of the page is the dark color */
+/* General body styling */
 body {
     background-color: #110C2A;
     color: white;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Styles the description text above the video */
-.description {
-    font-size: 1.1rem;
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
-    padding-top: 20px;
-}
-
-/* Main container for video and content */
+/* Main section styling */
 main {
-    background-color: #110C2A;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Ensures the video background matches the page's background color */
-video {
-    background-color: #110C2A;
+/* Wrapper to control content width and alignment */
+.content-wrapper {
+    max-width: 500px;
     width: 100%;
-    display: block;
-    max-width: 500px; /* Set a max width to control video size */
-}
-
-/* Ensures the container holding the video also has the correct background color */
-.col-md-8 {
-    background-color: #110C2A;
-    padding: 0;
-    max-width: 500px; /* Sets a max-width for the video container */
-    margin: 0 auto; /* Centers the container on desktop */
-    box-shadow: none; /* Removes any shadow around the video container */
-}
-
-/* Ensures full-width container styling on all devices */
-.container {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-    background-color: #110C2A; /* Ensures the background color is applied to the full width */
-}
-
-/* Styling for the footer section */
-footer {
-    background-color: #110C2A;
-    color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    font-size: 0.9rem;
 }
 
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-    .description {
-        font-size: 1rem;
-    }
+/* Description text styling */
+.description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
 
-    footer {
-        font-size: 0.8rem;
-    }
-
-    video {
-        max-width: 100%;
-    }
+/* Video styling */
+video {
+    width: 100%;
+    max-width: 500px;
+    background-color: #110C2A;
 }
