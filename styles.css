@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Ensuring full black background */
+    background-color: #110C2A; /* Ensuring full #110C2A background */
 }
 
 /* Body should take full height and act as a flex container */
@@ -12,39 +12,32 @@ body {
     flex-direction: column;
     justify-content: space-between; /* Ensures footer stays at the bottom */
     min-height: 100vh;
-    background-color: #000;
+    background-color: #110C2A; /* Updated background color */
     color: #fff;
 }
 
 /* Main content should take up all remaining space between header and footer */
 main {
     flex-grow: 1; /* This will make the main section expand to fill available space */
-    background-color: #000; /* Ensures the background remains black */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    background-color: #110C2A;
+    padding-bottom: 20px; /* Add some space before the footer */
 }
 
 /* Remove default margin/padding from header and footer */
 header, footer {
     margin: 0;
     padding: 0;
-    background-color: #000; /* Ensure both have a black background */
+    background-color: #110C2A; /* Ensure both have a #110C2A background */
     color: #fff; /* Ensure text is white */
     border: none; /* Remove any potential borders */
 }
 
-/* Announcement styling */
-.announcement h1 {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 50px 20px;
-    margin: 0; /* Remove any margin */
-    background-color: #000;
-    color: #fff;
-}
-
 /* Footer styling */
 footer {
-    padding: 20px 0; /* Ensure footer has padding but no margin */
+    padding: 40px 0; /* Ensure footer has padding but no margin */
     text-align: center;
     width: 100%; /* Footer takes the full width */
     box-sizing: border-box;
@@ -55,6 +48,13 @@ footer {
     border: none; /* Ensuring no borders */
 }
 
+/* Ensure video container is vertically centered */
+.video-container {
+    max-width: 100%;
+    width: 360px; /* Adjust this value to control video size on desktop */
+    padding-bottom: 20px; /* Ensure some space between video and footer */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     footer {
@@ -63,6 +63,10 @@ footer {
 
     .announcement h1 {
         font-size: 20px;
+    }
+
+    .video-container {
+        width: 100%;
     }
 }
 
