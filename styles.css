@@ -5,6 +5,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif; /* Ensure consistent font usage */
 }
 
 /* Styles the description text above the video */
@@ -13,12 +14,17 @@ body {
     text-align: center; /* Centers the text */
     margin-bottom: 20px; /* Adds space below the description */
     color: white; /* Ensures the text is white for visibility */
+    padding-top: 20px; /* Adds padding to give breathing room from the top */
 }
 
 /* Main container for video and content */
 main {
     background-color: #110C2A; /* Keeps the background color consistent in the main content */
     min-height: 100vh;  /* Ensures the main section takes up the full height of the viewport */
+    display: flex;      /* Use flexbox to center content vertically */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack elements (description and video) vertically */
 }
 
 /* Styling for the footer section */
@@ -28,6 +34,7 @@ footer {
     text-align: center; /* Centers the text */
     padding: 20px; /* Adds padding around the footer */
     margin-top: 20px; /* Adds space between the footer and the main content */
+    font-size: 0.9rem; /* Adjusts the font size to be a bit smaller for the footer */
 }
 
 /* Ensures the video background matches the page's background color */
@@ -35,6 +42,7 @@ video {
     background-color: #110C2A; /* Ensures no white background around the video */
     width: 100%; /* Makes the video responsive to the container */
     display: block; /* Removes any default inline spacing */
+    max-width: 500px; /* Set a max width to control video size on larger screens */
 }
 
 /* Ensures the container holding the video also has the correct background color */
@@ -43,8 +51,24 @@ video {
     padding: 0; /* Removes any default padding */
 }
 
-/* Ensure full width container styling on small devices */
+/* Ensure full-width container styling on small devices */
 .container {
     padding-left: 0;
     padding-right: 0;
+    width: 100%; /* Ensures the container takes full width on mobile */
+}
+
+/* Add some mobile-specific adjustments */
+@media (max-width: 768px) {
+    .description {
+        font-size: 1rem; /* Reduce the font size slightly on smaller screens */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Smaller font size for footer on mobile */
+    }
+
+    video {
+        max-width: 100%; /* Ensure the video scales well on smaller screens */
+    }
 }
