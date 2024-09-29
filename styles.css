@@ -13,6 +13,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: #110C2A; /* Added background color */
 }
 
 /* Wrapper to control content width and alignment */
@@ -21,6 +22,7 @@ main {
     width: 100%;
     text-align: center;
     margin: 0 auto; /* Add this line to center the content */
+    background-color: #110C2A; /* Added background color */
 }
 
 /* Description text styling */
@@ -29,6 +31,7 @@ main {
     margin-bottom: 20px;
     padding-top: 20px;
     color: white; /* Ensure text is white */
+    background-color: #110C2A; /* Added background color */
 }
 
 /* Video styling */
