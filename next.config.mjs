@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   reactStrictMode: true,
+  basePath: '/huconwebsite',
   images: {
     loader: 'custom',
     loaderFile: './my-loader.ts',
